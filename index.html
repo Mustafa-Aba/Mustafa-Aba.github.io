@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Aba</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Light Mode Toggle -->
+<div class="theme-switch">
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+    <label for="theme-toggle" class="theme-toggle-label"></label>
+</div>
+
+<body class="dark-mode">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <a href="#home" id="logo-link"><img src="images\Logo.png" alt="Logo" class="logo"></a>
+                <a href="#home" class="home-button">Home</a>
+            </div>
+            <div class="header-right">
+                <a href="#about" class="nav-button"><i class="fas fa-user"></i> About Me</a>
+                <a href="#resume" class="nav-button">Resume</a>
+                <a href="#portfolio" class="nav-button">Portfolio</a>
+                <a href="#contact" class="nav-button">Contact</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container">
+                <div class="centered-text">
+                    <h2>Hello, I'm Mustafa.</h2>
+                    <h2>Software Test Engineer</h2>
+                    <!-- Add buttons here -->
+                    <div class="home-buttons">
+                        <a href="#contact" class="contact-button">Contact Me</a>
+                        <a href="#resume" class="resume-button">View Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Me Section -->
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>🚀 Passionate Software Test Engineer | Manual & Automation Tester</p>
+                    <p>💻 Technical Proficiency:</p>
+                    <ul>
+                        <li>Extensively worked on Manual and Automation Testing of Web-Based Applications using Java,
+                            Selenium, Cucumber, JUnit, TestNG, Maven and other libraries such as JDBC, REST Assured.
+                        </li>
+                        <li>Excellent knowledge and implementation skills in complete Software Development Life Cycle
+                            (SDLC) and Software Testing Life Cycle (STLC) with focusing on quality and Business
+                            Requirements in Agile environments.</li>
+                        <li>Experience in creating, maintaining, and executing detailed Test Cases and Test Plans</li>
+                        <li>Experience in different testing types; Functional, Smoke and Regression tests.</li>
+                        <li>Experience in building Data Driven, Behavior Driven Development (BDD) and Page Object
+                            Patterns.</li>
+                        <li>Proficient in implementing Core Java, OOP (Object Oriented Programming) concepts</li>
+                        <li>Experience in Database Testing by writing complex SQL Queries for data validation on
+                            databases MySQL.</li>
+                        <li>Experience in API Testing of RESTful Web Services with analyzing API documentation and using
+                            Postman, Rest Assured library as a tool.</li>
+                        <li>Experience in working with AWS and CI/CD using Jenkins and configuring build, trigger, and
+                            post-build actions.</li>
+                    </ul>
+                    <p>🤝 Soft Skills:</p>
+                    <ul>
+                        <li>I'm not just about hard skills; I bring a collaborative and team-oriented approach to every
+                            project.</li>
+                        <li>A clear and effective communicator, ensuring seamless coordination within cross-functional
+                            teams.</li>
+                    </ul>
+                    <p>🌱 Continuous Learner:</p>
+                    <ul>
+                        <li>I thrive in environments that foster growth and excellence. I stay on top of industry trends
+                            and technologies, always eager to embrace new challenges.</li>
+                    </ul>
+                    <p>🚀 Motivated and Creative:</p>
+                    <ul>
+                        <li>Highly motivated, I approach challenges with enthusiasm, finding innovative solutions and
+                            contributing to a positive team culture.</li>
+                    </ul>
+                    <p>If you're looking for a dedicated team player with a knack for problem-solving and a passion for
+                        continuous improvement, let's connect! Feel free to reach out anytime to explore how my skills
+                        can contribute to your projects or if you have any questions. Let's make great things happen
+                        together! 🚀</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume">
+            <div class="container">
+                <h2>Resume</h2>
+                <div class="resume-content">
+                    <p>Click button to download my resume</p>
+                    <a href="resume\Mustafa Aba.pdf" download="Mustafa Aba Resume.pdf"
+                        class="resume-download-button">Download Resume</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="project-container">
+                    <!-- Project 1 -->
+                    <div class="project">
+                        <img src="images\project1.png" alt="Project 1" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-name">e-Commerce Application Testing</h3>
+                            <button class="visit-button" onclick="openGithub('project1')">Visit</button>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project">
+                        <img src="images\project1.png" alt="Project 2" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-name">API Testing</h3>
+                            <button class="visit-button" onclick="openGithub('project2')">Visit</button>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project">
+                        <img src="images\project1.png" alt="Project 3" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-name">Medicine Management System Testing</h3>
+                            <button class="visit-button" onclick="openGithub('project3')">Visit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="input-label">Name:</label>
+                        <input type="text" id="name" name="name" class="input-field" placeholder="Enter your name"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="input-label">Email:</label>
+                        <input type="email" id="email" name="email" class="input-field" placeholder="Enter your email"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="input-label">Write Your Message:</label>
+                        <textarea id="message" name="message" class="input-field" rows="5"
+                            placeholder="Write your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <a href="#home" id="logo-link"><img src="images\Logo.png" alt="Logo" class="logo"></a>
+            <p>&copy; 2024 Mustafa Aba</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <!-- Custom JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.nav-button').forEach(function (element) {
+                element.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100, // Adjust the offset as needed
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

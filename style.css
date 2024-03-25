@@ -1,0 +1,382 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    overflow-y: auto;
+    /* Add scrollbar on the right side */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.header-left {
+    float: left;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+}
+
+.header-right {
+    float: right;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.home-button,
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 16px;
+}
+.theme-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001; /* Ensure it's above other content */
+}
+
+.theme-switch .theme-toggle-checkbox {
+    display: none;
+}
+
+.theme-switch .theme-toggle-label {
+    display: block;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.theme-switch .theme-toggle-label::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    transition: left 0.3s;
+}
+
+.theme-switch .theme-toggle-checkbox:checked + .theme-toggle-label {
+    background-color: #ffd700; /* Change color for light mode toggle */
+}
+
+.theme-switch .theme-toggle-checkbox:checked + .theme-toggle-label::after {
+    left: calc(100% - 22px);
+}
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff; /* Text color for dark mode */
+}
+
+.dark-mode .theme-toggle-label {
+    background-color: #ccc;
+}
+
+.dark-mode .theme-toggle-label::after {
+    background-color: #fff;
+}
+
+/* Light Mode Styles */
+.light-mode {
+    background-color: #fff;
+    color: #333; /* Text color for light mode */
+}
+
+.light-mode .theme-toggle-label {
+    background-color: #ccc; /* Adjust color for light mode toggle */
+}
+
+.light-mode .theme-toggle-label::after {
+    background-color: #333; /* Adjust color for light mode toggle */
+}
+
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    overflow-y: auto;
+}
+
+
+/* Home Section Styles */
+#home h2 {
+    font-size: 48px;
+    /* Adjust the font size as needed */
+}
+
+.home-buttons {
+    margin-top: 20px;
+}
+
+.contact-button,
+.resume-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover,
+.resume-button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 300px; /* Adjust this value if needed */
+    padding-top: 20px; /* Add padding-top to create space between header and sections */
+    transition: padding-top 0.5s ease; /* Add transition effect for smooth animation */
+}
+
+section {
+    margin-bottom: 100px; /* Adjust this value if needed */
+    padding-top: 100px; /* Add padding-top to create space between header and section */
+}
+
+
+
+/* Show sections when they are in view */
+section.show {
+    transform: scale(1); /* Scale up to 1 */
+}
+
+.centered-text {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+
+/* Navigation Styles */
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* About Me Section Styles */
+.about-content {
+    margin-top: 20px;
+}
+
+.about-content p {
+    margin-bottom: 10px;
+}
+
+.about-content ul {
+    list-style-type: square;
+    margin-bottom: 15px;
+}
+
+/* Resume Section Styles */
+.resume-content p {
+    margin-bottom: 10px;
+}
+.resume-download-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 50px;
+    margin-bottom: 150px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-download-button:hover {
+    background-color: #0056b3;
+}
+
+/* Portfolio Section Styles */
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 30%;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 20px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover .project-image {
+    transform: scale(1.1);
+}
+
+.project-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover .project-details {
+    opacity: 1;
+}
+
+.project-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff; /* Add text color for better visibility */
+}
+
+.visit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section Styles */
+#contact {
+    text-align: left; /* Align text to left */
+    padding-top: 20px; /* Add space at the top */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .header-left,
+    .header-right {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+
+    .nav-button {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
